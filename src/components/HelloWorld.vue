@@ -3,7 +3,7 @@
     <h1>Tic Tac Toe</h1>
     <hr>
     <h1>現在是誰:{{ getSymbol(player)}} winner :{{ getSymbol(winner) }}</h1>
-    <button @click="reset"></button>
+    <button @click="reset">重製</button>
     <div class="grids">
       <div class="gird" v-for="(grid, index) in grid" :key="index" @click="clickGrid(index)">
         {{ getSymbol(grid) }}
