@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "home": "https://QAQBlaze0827.github.io/vue-ooxx",
+  "home": "https://QAQBlaze0827.github.io/vue-tic-tac-toe",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
