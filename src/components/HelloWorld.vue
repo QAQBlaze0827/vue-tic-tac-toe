@@ -90,4 +90,13 @@ h1 {
   text-align: center;
   cursor: pointer;
 }
+button {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 20px;
+  background: #f4f4f4;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
 </style>
