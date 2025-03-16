@@ -3,6 +3,7 @@
     <h1>Tic Tac Toe</h1>
     <hr>
     <h1>現在是誰:{{ getSymbol(player)}} winner :{{ getSymbol(winner) }}</h1>
+    <button @click="reset"></button>
     <div class="grids">
       <div class="gird" v-for="(grid, index) in grid" :key="index" @click="clickGrid(index)">
         {{ getSymbol(grid) }}
@@ -44,7 +45,7 @@ export default {
       // return index === 0 ? '' : index === 1 ? 'O' : 'X';
     },
     checkWinner() {
-      
+
       const winPatterns = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
         [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
@@ -57,6 +58,11 @@ export default {
         }
         
       }
+    },
+    reset(){
+      this.grid=[0,0,0,0,0,0,0,0,0];
+      this.player=1;
+      this.winner=0;
     }
   }
 }
