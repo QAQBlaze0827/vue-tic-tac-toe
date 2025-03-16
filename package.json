@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "home": "https://QAQBlaze0827.github.io/vue-ooxx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
